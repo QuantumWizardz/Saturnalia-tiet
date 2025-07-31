@@ -1,9 +1,8 @@
-import React from 'react';
 import { FaqItem } from './faq-accordion';
 
 export const FaqSection = () => {
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 p-8'>
+    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 mb-16'>
       <div className='w-2xs col-span-2 mx-6 mt-16'>
         <img src="../../src/assets/homepage/genie.png" alt="FAQ 1" className="w-full object-cover" />
       </div>
