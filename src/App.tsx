@@ -1,4 +1,3 @@
-import './App.css'
 import {HeroSection} from '../components/homepage/hero-section'
 
 function App() {
