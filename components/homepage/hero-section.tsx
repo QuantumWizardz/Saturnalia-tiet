@@ -1,8 +1,9 @@
 import React from 'react';
 import { LogoSection } from './logo-section';
-import { HomeHeading } from './home-button';
 import { EventCard } from './event-card';
 import { AboutUsSection } from './about-us-section';
+import { FaqSection } from './faq-section';
+import { HomeHeading } from './hero-heading';
 
 export const HeroSection = () => {
   return (
@@ -27,7 +28,7 @@ export const HeroSection = () => {
         />
         <div className="absolute inset-0 flex flex-col text-white text-4xl">
           <div className='h-full flex flex-col items-center justify-center'>
-            <HomeHeading/>
+            <HomeHeading heading='Featured Events'/>
             <div className='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-8'>
               <EventCard />
               <EventCard />
@@ -44,9 +45,14 @@ export const HeroSection = () => {
           alt="bg_2"
           className="w-full object-cover"
         />
-        <div className="absolute inset-0 bottom-full  text-white text-4xl">
-          <div className='h-full mt-[32rem]'>
-            <AboutUsSection />
+        <div className="absolute inset-0 bottom-full text-white text-4xl">
+          <div className='flex flex-col space-y-12'>
+            <div className='h-full mt-[32rem]'>
+              <AboutUsSection />
+            </div>
+            <div>
+              <FaqSection />
+            </div>
           </div>
         </div>
       </div>

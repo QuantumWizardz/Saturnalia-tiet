@@ -1,5 +1,5 @@
 import React from 'react';
-import { HomeHeading } from './home-button';
+import { HomeHeading } from './hero-heading';
 
 export const AboutUsSection = () => {
   return (
@@ -9,7 +9,7 @@ export const AboutUsSection = () => {
       </div>
       <div className='relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 p-8'>
         <div className='flex flex-col items-center justify-center w-full h-full p-8 space-y-8'>
-          <HomeHeading />
+          <HomeHeading heading='About Us'/>
           <h1 className='w-sm text-xl font-bold tracking-wide text-black p-4 ml-10' style={{ fontFamily: "Irish Grover" }}>
             Witnessing over 20,000 students from across India, Saturnalia is an extravagant festival featuring exceptional technical and cultural events. With the theme "Beyond Boundaries," TIET's Annual Techno-Cultural Fest embodies the spirit of exploration, innovation, and diversity, leaving a lasting impact on all participants.
           </h1>
