@@ -1,6 +1,6 @@
 import React from 'react';
 import card from '../../src/assets/homepage/event_card_bg.png'
-export const EventCard = () => {
+export const EventCard = ()=>{
   return (
     <div className="w-full flex justify-center mt-20">
       <div className="w-[220px] h-[300px] relative">

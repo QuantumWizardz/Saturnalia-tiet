@@ -14,6 +14,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+  font-family: 'Ondine';
+  src: url('./assets/arabian_night.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 body {
   margin: 0;

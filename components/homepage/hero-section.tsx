@@ -1,8 +1,9 @@
-import React from 'react';
-import { LogoSection } from './logo-section';
-import { HomeHeading } from './home-button';
 import { EventCard } from './event-card';
 import { AboutUsSection } from './about-us-section';
+import { FaqSection } from './faq-section';
+import { HomeHeading } from './hero-heading';
+import { FooterSection } from './footer-section';
+import {Lanyard} from "../lanyard/Lanyard";
 
 export const HeroSection = () => {
   return (
@@ -15,6 +16,7 @@ export const HeroSection = () => {
           className="w-full block object-cover"
         />
         <div className="absolute inset-0  text-white text-4xl">
+
           <LogoSection />
         </div>
       </div>
@@ -35,6 +37,8 @@ export const HeroSection = () => {
               <EventCard />
             </div>
           </div>
+          <Lanyard position={[0, 0, 30]} gravity={[0, -40, 0]} fov={20} transparent={true} />
+ 
         </div>
       </div>
 
@@ -44,9 +48,26 @@ export const HeroSection = () => {
           alt="bg_2"
           className="w-full object-cover"
         />
-        <div className="absolute inset-0 bottom-full  text-white text-4xl">
-          <div className='h-full mt-[32rem]'>
-            <AboutUsSection />
+        <div className="absolute inset-0 bottom-full text-white text-4xl">
+          <div className='flex flex-col space-y-12'>
+            <div className='h-full flex flex-col items-center justify-center mt-[5rem]'>
+              <HomeHeading heading='Featured Events'/>
+              <div className='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-8'>
+                <EventCard />
+                <EventCard />
+                <EventCard />
+                <EventCard />
+              </div>
+            </div>
+            <div className='h-full mt-[8rem]'>
+              <AboutUsSection />
+            </div>
+            <div className='h-full mt-[4rem]'>
+              <FaqSection />
+            </div>
+            <div>
+              <FooterSection />
+            </div>
           </div>
         </div>
       </div>
