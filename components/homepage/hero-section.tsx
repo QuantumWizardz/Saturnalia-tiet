@@ -28,7 +28,7 @@ export const HeroSection = () => {
         <div className="absolute inset-0 flex flex-col text-white text-4xl">
           <div className='h-full flex flex-col items-center justify-center'>
             <HomeHeading/>
-            <div className='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-8'>
+            <div className='w-fullinst-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-8'>
               <EventCard />
               <EventCard />
               <EventCard />
