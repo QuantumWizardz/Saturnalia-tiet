@@ -2,12 +2,12 @@ import { FaqItem } from './faq-accordion';
 
 export const FaqSection = () => {
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 mb-16'>
-      <div className='w-2xs col-span-2 mx-6 mt-16'>
-        <img src="../../src/assets/homepage/genie.png" alt="FAQ 1" className="w-full object-cover" />
+    <div className='flex' style={{ minHeight: '600px' }}>
+      <div className='flex flex-[0.4] justify-center items-center' style={{ height: '600px', minHeight: '600px' }}>
+        <img src="../../src/assets/homepage/genie.png" alt="FAQ 1" className="w-auto h-[80%]" style={{ maxHeight: '480px', height: '80%', objectFit: 'contain' }} />
       </div>
-      <div className='col-span-4 space-y-6 flex flex-col'>
-        <h1 className='text-8xl font-bold mb-4 text-[#CB9834] text-shadow-lg' style={{ fontFamily: 'Ondine, serif' }}>FAQs</h1>
+      <div className='col-span-4 space-y-6 flex flex-col flex-[0.6] pr-10'>
+        <p className='text-[8rem] align- font-bold text-[#CB9834] text-shadow-lg' style={{ fontFamily: 'Ondine, serif',margin:'0px' }}>FAQs</p>
         <FaqItem question='anything about events?' answer='orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat' />
         <FaqItem question='anything about events?' answer='orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat' />
         <FaqItem question='anything about events?' answer='orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat' />

@@ -1,4 +1,8 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+
+
 
 /* Prevent overscroll on the whole page */
 body {
@@ -13,7 +17,7 @@ body {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  background-color: #FB9252;
+  background-color: #fff;
   color-scheme: light dark;
   color: #333333;
 
@@ -23,6 +27,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
+@font-face {
+  font-family: 'Koulen';
+  src: url('./assets/koulen.ttf') format('truetype');
+}
 @font-face {
   font-family: 'Ondine';
   src: url('./assets/arabian_night.otf') format('opentype');

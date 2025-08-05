@@ -1,40 +1,44 @@
 import { CalendarDays, Clock, MapPin } from 'lucide-react';
-import card from '../../src/assets/homepage/event_card_bg.png'
+
 import image from '../../src/assets/homepage/event_test.png'
+import card from '../../public/card.png'
 
 export const EventCard = ()=>{
   return (
-    <div className="w-full flex justify-center mt-20">
-      <div className="w-[600px] h-[600px] relative">
-        <img src={image} alt='test' className='absolute top-28 left-30  object-cover z-0'/>
-
-        <img
-          src={card} // Adjust path as per your folder structure
-          alt="Event Card Background"
-          className="absolute object-cover w-full h-full z-10"
-        />
-
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-white font-bold space-y-2 mt-35">
-          <h1 className="text-2xl font-[cursive] tracking-wide" style={{fontFamily: "Hidayatullah"}}>Event Name</h1>
-          <p className='text-[0.6rem] font-light w-3xs text-center'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <div className="pt-4 flex flex-row items-start justify-center space-x-8">
-
-            <div className="flex flex-col items-center space-y-4">
-              <CalendarDays strokeWidth={1.5} />
-              <Clock strokeWidth={1.5} />
-              <MapPin strokeWidth={1.5} />
-            </div>
-
-            <div className="flex flex-col items-start space-y-4 mt-1">
-              <p className="text-sm font-medium">31st Feb 2025</p>
-              <p className="text-sm font-medium">8:00 am</p>
-              <p className="text-sm font-medium">Venue</p>
-            </div>
+    <div className="w-full flex justify-center items-center"
+    style={{
+      backgroundImage: `url(${card})`,
+      backgroundSize: 'contain',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      height: '500px',
+      //image on top of the inside card
+      // boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+      // borderRadius: '10px',
+      padding: '20px',
+      // margin: '10px',
+    }}>
+      <div className="w-[60%] h-[61%] bg-[#FE9755] flex flex-col items-center justify-center p-2 ml-[6px]">
+        <img src={image} alt="Event" className="w-full h-[120px] object-cover rounded-md mb-2" />
+        <h2 className="text-lg font-bold text-center mb-1">Event Title</h2>
+        {/* <p className="text-gray-600 text-center text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> */}
+        <div className="flex flex-col items-center justify-between w-full gap-1">
+          <div className="flex items-center text-sm">
+        <CalendarDays className="text-white mr-1 h-4 w-4" />
+        <span className="text-white">Date</span>
           </div>
-
+          <div className="flex items-center text-sm">
+        <Clock className="text-white mr-1 h-4 w-4" />
+        <span className="text-white">Time</span>
+          </div>
+          <div className="flex items-center text-sm">
+        <MapPin className="text-white mr-1 h-4 w-4" />
+        <span className="text-white">Location</span>
+          </div>
         </div>
+        <button className="bg-[#EFAC60] text-[#fff] font-bold text-sm px-5 py-1.5 rounded-md shadow hover:bg-[#e29b4f] transition duration-300 mt-2">
+          Register Now
+        </button>
       </div>
     </div>
   );

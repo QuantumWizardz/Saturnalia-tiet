@@ -63,8 +63,9 @@ export const Footer: React.FC = () => (
     style={{
       background: '#154B81',
       padding: 0,
-      margin: 0,
+      marginTop: '-80px',
       minHeight: '420px'
+
     }}
   >
     <GoldenLines />

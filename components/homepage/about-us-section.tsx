@@ -3,7 +3,7 @@ import { HomeHeading } from './hero-heading';
 
 export const AboutUsSection = () => {
   return (
-    <div className="w-full flex justify-between items-center">
+    <div className="w-full py-5 flex justify-between items-center">
       <div className='w-xs relative'>
         <img src="../../src/assets/homepage/about_design.png" alt="About Us Background" className="object-cover" />
       </div>
@@ -20,7 +20,7 @@ export const AboutUsSection = () => {
             DOWNLOAD NOW
           </button>
         </div>
-        <div className='w-xs h-sm ml-10 mt-6'>
+        <div className='w-[350px] h-md ml-10 mt-10'>
           <img src="../../src/assets/homepage/about_us_img.png" alt="About Us Background" className="object-cover" />
         </div>
       </div>
