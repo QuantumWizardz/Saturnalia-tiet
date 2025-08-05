@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+/* Prevent overscroll on the whole page */
+body {
+  overscroll-behavior: none;
+  overflow-x: hidden;
+  overflow-y: overlay;
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f0f0f0;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

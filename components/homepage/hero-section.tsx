@@ -2,7 +2,7 @@ import { EventCard } from './event-card';
 import { AboutUsSection } from './about-us-section';
 import { FaqSection } from './faq-section';
 import { HomeHeading } from './hero-heading';
-import {Lanyard} from "../lanyard/Lanyard";
+// import {Lanyard} from "../lanyard/Lanyard";
 
 export const HeroSection = () => {
   return (
@@ -14,9 +14,9 @@ export const HeroSection = () => {
           alt="Hero"
           className="w-full block object-cover"
         />
-        <div className="absolute inset-0  text-white text-4xl">
+        {/* <div className="absolute inset-0  text-white text-4xl">
           <Lanyard position={[0, 0, 30]} gravity={[0, -40, 0]} fov={20} transparent={true} />
-        </div>
+        </div> */}
       </div>
 
       {/* Problem in blending the image with the houses needs to be solved
