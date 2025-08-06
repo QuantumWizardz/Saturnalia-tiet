@@ -77,12 +77,9 @@ export const HeroSection = () => {
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
             padding: '2rem',
-          }}>
-          
+          }}>  
             <StarsOverlay count={35} starURL={starURL} />
-           
             <FaqSection   />
-            
           </div>
         </div>
       </div>

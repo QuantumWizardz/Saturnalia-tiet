@@ -19,8 +19,8 @@ const StarsOverlay: React.FC<StarsOverlayProps> = ({ count, starURL }) => {
 
     const top =
       row * cellHeight +
-      Math.random() * cellHeight * 0.8 + // small offset within cell
-      cellHeight * 0.1; // padding to avoid edges
+      Math.random() * cellHeight * 0.8 +
+      cellHeight * 0.1;
 
     const left =
       col * cellWidth +
