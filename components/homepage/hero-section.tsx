@@ -8,6 +8,8 @@ import alladin from '../../public/alladin1.png'
 import background from '../../public/mainBg.png';
 import dates from '../../public/dates.png';
 import bgPattern from '../../public/bg_pattern.png';
+import StarsOverlay from './stars-bg';
+import starURL from '../../src/assets/homepage/star.svg';
 export const HeroSection = () => {
   return (
     <div>
@@ -65,7 +67,7 @@ export const HeroSection = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className='z-10'>
           <div className='h-[90vh]'>
             <AboutUsSection />
           </div>
@@ -75,8 +77,9 @@ export const HeroSection = () => {
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
             padding: '2rem',
-          }}>
-            <FaqSection />
+          }}>  
+            <StarsOverlay count={35} starURL={starURL} />
+            <FaqSection   />
           </div>
         </div>
       </div>
